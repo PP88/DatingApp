@@ -1,0 +1,32 @@
+<!-- <div class="custom-container">
+  <div class="custom-card custom-card-1">
+    <h2>Name</h2>
+    <div class="custom-card-image"></div>
+    <div>Age</div>
+    <div>Last Active</div>
+    <div>Member since</div>
+  </div>
+  <div class="custom-card custom-card-2">
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #group="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="about">About</mat-button-toggle>
+      <mat-button-toggle value="interests">Interests</mat-button-toggle>
+      <mat-button-toggle value="photos">Photos</mat-button-toggle>
+      <mat-button-toggle value="messages">Messages</mat-button-toggle>
+    </mat-button-toggle-group>
+    <div
+      [ngSwitch]="group.value"
+      style="width: 100%; height: calc(100% - 50px - 21%)"
+    >
+      <div *ngSwitchCase="'about'">about works</div>
+      <div *ngSwitchCase="'interests'">interests works</div>
+      <div *ngSwitchCase="'photos'" style="width: 100%; height: 100%">
+        <app-user-photos></app-user-photos>
+      </div>
+      <div *ngSwitchCase="'messages'">messages works</div>
+    </div>
+  </div>
+</div> -->

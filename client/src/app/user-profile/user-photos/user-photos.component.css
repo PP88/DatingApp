@@ -1,0 +1,38 @@
+.custom-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.custom-images {
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  background-size: cover;
+}
+
+.custom-images:hover {
+  box-shadow: 0 0 10px;
+}
+
+.custom-action {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.custom-action:hover {
+  background-color: rgb(0, 0, 0, 0.6);
+  color: #f9f9f9;
+}
+
+.viewport {
+  height: 100%;
+  width: 100%;
+  background: #c4bbb8;
+  box-shadow: 1px 1px 1px grey;
+}
+
+.viewport,
+.cdk-virtual-scroll-content-wrapper {
+  display: flex;
+  flex-direction: row;
+}

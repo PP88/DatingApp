@@ -1,0 +1,52 @@
+<!-- <div
+  class="custom-image"
+  [ngStyle]="{ 'background-image': 'url(' + selectedPhoto + ')' }"
+></div>
+<div
+  #images
+  style="
+    max-width: 100%;
+    margin-top: 5px;
+    display: flex;
+    /* gap: 5px; */
+    height: 30%;
+    overflow-x: hidden;
+    position: relative;
+    align-self: center;
+  "
+>
+  <button
+    style="position: sticky; left: 0; top: 50%; transform: translateY(-50%)"
+    class="custom-action"
+    mat-icon-button
+    aria-label="Button left"
+    (click)="buttonClick('left')"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <cdk-virtual-scroll-viewport
+    orientation="horizontal"
+    itemSize="100"
+    class="viewport"
+  >
+    <div
+      class="custom-images"
+      *ngFor="let photo of photos; let i = index"
+      [ngStyle]="{
+        'background-image': 'url(' + photo + ')',
+        border: i == selectedIndex ? '3px blue solid' : 'none'
+      }"
+      [id]="i"
+      (click)="selectPhoto($event)"
+    ></div>
+  </cdk-virtual-scroll-viewport>
+  <button
+    style="position: sticky; top: 50%; transform: translateY(-50%); right: 0"
+    class="custom-action"
+    mat-icon-button
+    aria-label="Button right"
+    (click)="buttonClick('right')"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+</div> -->

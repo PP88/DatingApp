@@ -4,10 +4,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
+import { FormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavComponent,
+    HomeComponent,
+    RegisterComponent,
     // UsersComponent,
     // NavBarComponent,
     // AuthComponent,
@@ -23,7 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     HttpClientModule,
     // ReactiveFormsModule,
-    // FormsModule,
+    FormsModule,
     // ScrollingModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -39,6 +47,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     // MatFormFieldModule,
     // MatTooltipModule,
     // MatButtonToggleModule,
+    BsDropdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -27,7 +27,6 @@ export class RegisterComponent implements OnInit {
       },
       (error: HttpErrorResponse) => {
         console.log(error);
-        this.toastr.error(error.error);
       }
     );
   }

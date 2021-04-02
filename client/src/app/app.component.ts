@@ -12,11 +12,6 @@ import { AccountService } from './_services/account.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  // constructor(public router: Router) {}
-
-  // ngOnInit() {
-  //   this.router.navigate(['sign-up']);
-  // }
   title = 'The Dating App';
   users: any;
 
@@ -25,7 +20,9 @@ export class AppComponent implements OnInit {
     private accountService: AccountService
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.setCurrentUser();
+  }
 
   setCurrentUser() {
     const user: User = JSON.parse(localStorage.getItem('user'));
